@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IONICONS -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- REMIXICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- COSTUM CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/assets/img/logo/logo.jpg" />
+
+    <!-- TITLE -->
+    <title>Golet Kost</title>
+  </head>
+  <body class="overflow-x-hidden bg-background">
+    <!--==================== Header Start ====================-->
+    <header class="fixed top-0 left-0 right-0 md:py-0">
+      <nav class="w-full bg-primary md:bg-primary order-[10001]">
+        <div class="flex items-center justify-between px-8 py-2">
+          <a href="/index.html" class="flex items-center gap-3 text-lg font-bold text-white"><img src="/assets/img/logo/logo.jpg" alt="" class="w-12" />Golet Kost</a>
+
+          <!-- only for large device -->
+          <div class="hidden space-x-10 md:flex">
+            <a href="#home" class="text-white hover:text-gray-300">Beranda</a>
+            <a href="/src/pages/product.html" class="text-white hover:text-gray-300">Kost</a>
+            <a href="/src/pages/about.html" class="text-white hover:text-gray-300">Tentang kami</a>
+          </div>
+
+          <!-- menu btn, only display on mobile -->
+          <div class="md:hidden">
+            <button id="mobile-menu-button" class="flex items-center justify-center text-3xl text-white">
+              <ion-icon onclick="onToggleMenu(this)" name="menu" class="cursor-pointer md:hidden"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobile-menu" class="hidden pb-5 md:hidden">
+          <a href="#home" class="block py-4 mt-3 text-center text-white bg-blue-600">Beranda</a>
+          <a href="/src/pages/product.html" class="block py-4 text-center text-white hover:bg-blue-600">Kost</a>
+          <a href="/src/pages/about.html" class="block py-4 text-center text-white hover:bg-blue-600">Tentang kami</a>
+        </div>
+      </nav>
+    </header>
+    <!--==================== Header End ====================-->
+
+    <!--==================== Main Start ====================-->'
+    <main>
+      <!--========== CIRCLE BACKGROUND START ==========-->
+      <div class="w-[300px] h-[550px] bg-blue-500 rounded-[100%] absolute -z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[130px]"></div>
+      <!--========== CIRCLE BACKGROUND END ==========-->
+
+      <!--========== HERO START ========== -->
+      <article id="hero">
+        <div class="flex flex-col justify-center items-center w-[92%] mx-auto gap-8 pt-20 md:flex-row md:pt-15 pb-10 lg:gap-20">
+          <img src="/assets/img/main-icon.png" class="w-[50%] md:w-[40%] lg:w-[35%]" alt="" />
+          <div class="flex flex-col gap-4 md:gap-5">
+            <div class="flex flex-col text-center md:text-left lg:text-left lg:gap-3">
+              <h1 class="text-2xl font-bold md:text-3xl lg:text-5xl">Teman Setia Pencari Kost!</h1>
+              <p class="font-semibold text-slate-600 lg:text-xl">by Golet Kost</p>
+            </div>
+            <div class="flex justify-center md:justify-start lg:justify-start">
+              <a href="#" class="bg-[#15234A] text-white text-sm font-semibold py-2 px-6 rounded hover:bg-[#15234A]/90 lg:py-3 lg:px-8 lg:text-xl">Cari Kost</a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!--========== HERO END ========== -->
+
+      <!--========== SUPERIORITY START ========== -->
+      <article class="container py-4 z" id="superiority">
+        <div class="flex flex-col gap-8 text-sm">
+          <h1 class="text-xl font-bold text-center">Keunggulan kami</h1>
+          <div class="grid grid-cols-2 gap-4">
+            <section class="flex flex-col gap-2 p-4 text-center rounded-md backdrop-blur-[80px] hover:shadow-lg">
+              <i class="text-3xl ri-service-line"></i>
+              <h1 class="font-semibold">Pelayanan maksimal</h1>
+              <p>Langsung diantar ke kostnya tanpa biaya pengantaran</p>
+            </section>
+            <section class="flex flex-col gap-2 p-4 text-center backdrop-blur-[80px] rounded-md hover:shadow-lg">
+              <i class="text-3xl ri-video-on-line"></i>
+              <h1 class="font-semibold">Virtual tour</h1>
+              <p>Melihat kost secara virtual, mendapatkan gambar yang lebih baik</p>
+            </section>
+          </div>
+        </div>
+      </article>
+      <!--========== SUPERIORITY END ========== -->
+
+      <!--========== UNIVERSITY START ========== -->
+      <article class="container py-8" id="university">
+        <h1 class="pb-2 text-lg font-semibold">Kuliah dimana?</h1>
+        <div class="grid grid-cols-2 gap-4 text-sm font-semibold">
+          <a href="" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-in">
+            <img src="/assets/img/logo-univ/logo-ump.png" alt="logo-ump" class="w-10" />
+            <h1>UMP</h1>
+          </a>
+          <a href="" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-in">
+            <img src="/assets/img/logo-univ/logo-unsoed.png" alt="logo-ump" class="w-10" />
+            <h1>UNSOED</h1>
+          </a>
+          <a href="" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-in">
+            <img src="/assets/img/logo-univ/logo-telkom.png" alt="logo-ump" class="w-10" />
+            <h1>ITTP TELKOM</h1>
+          </a>
+          <a href="" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-in">
+            <img src="/assets/img/logo-univ/logo-uhb.png" alt="logo-ump" class="w-10" />
+            <h1>UHB</h1>
+          </a>
+          <a href="" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-ins">
+            <img src="/assets/img/logo-univ/logo-poltekkes.png" alt="logo-ump" class="w-10" />
+            <h1>POLTEKKES SEMARANG</h1>
+          </a>
+        </div>
+      </article>
+      <!--========== UNIVERSITY END ========== -->
+
+      <!--========== TESTIMONI START ========== -->
+      <article class="container" id="testimoni">
+        <h1 class="pb-4 text-lg font-semibold text-center">Real Testimoni</h1>
+        <div class="grid grid-cols-2">
+          <section class="flex justify-center w-full overflow-hidden">
+            <img src="/assets/img/testimoni/img1.jpg" class="w-[90%] rounded-md border-2 shadow-lg hover:scale-105 duration-500 ease-in-out" />
+          </section>
+          <section class="flex justify-center w-full overflow-hidden">
+            <img src="/assets/img/testimoni/img2.jpg" class="w-[90%] rounded-md border-2 shadow-lg hover:scale-105 duration-500 ease-in-out" />
+          </section>
+        </div>
+      </article>
+      <!--========== TESTIMONI END ========== -->
+    </main>
+
+    <!--==================== Main End ====================-->
+
+    <!--==================== Footer Start ====================-->
+
+    <!--==================== Footer End ====================-->
+
+    <!-- JAVASCRIPT -->
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

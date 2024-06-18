@@ -1,0 +1,19 @@
+header {
+  z-index: 10001 !important;
+}
+
+.bg-primary {
+  background-color: #15234a;
+}
+
+.primary {
+  color: #15234a;
+}
+
+.bg-background {
+  background-color: #fff;
+}
+
+.container {
+  padding: 0 1rem;
+}
