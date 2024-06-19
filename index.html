@@ -46,7 +46,7 @@
 
         <!-- mobile menu -->
         <div id="mobile-menu" class="hidden pb-5 md:hidden">
-          <a href="#home" class="block py-4 mt-3 text-center text-white bg-blue-600">Beranda</a>
+          <a href="/index.html" class="block py-4 mt-3 text-center text-white bg-blue-600">Beranda</a>
           <a href="/src/pages/product.html" class="block py-4 text-center text-white hover:bg-blue-600">Kost</a>
           <a href="/src/pages/about.html" class="block py-4 text-center text-white hover:bg-blue-600">Tentang kami</a>
         </div>
@@ -57,7 +57,7 @@
     <!--==================== Main Start ====================-->'
     <main>
       <!--========== CIRCLE BACKGROUND START ==========-->
-      <div class="w-[300px] h-[550px] bg-blue-500 rounded-[100%] absolute -z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[130px]"></div>
+      <div class="w-[300px] h-[550px] md:w-[400px] md:h-[560px] lg:w-[700px] lg:h-[570px] xl:w-[800px] xl:h-[600px] bg-blue-500 rounded-[100%] absolute -z-50 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] blur-[130px]"></div>
       <!--========== CIRCLE BACKGROUND END ==========-->
 
       <!--========== HERO START ========== -->
@@ -78,19 +78,19 @@
       <!--========== HERO END ========== -->
 
       <!--========== SUPERIORITY START ========== -->
-      <article class="container py-4 z" id="superiority">
+      <article class="container py-4 z cursor-pointer mx-auto" id="superiority">
         <div class="flex flex-col gap-8 text-sm">
-          <h1 class="text-xl font-bold text-center">Keunggulan kami</h1>
+          <h1 class="text-xl font-bold text-center md:text-2xl">Keunggulan kami</h1>
           <div class="grid grid-cols-2 gap-4">
             <section class="flex flex-col gap-2 p-4 text-center rounded-md backdrop-blur-[80px] hover:shadow-lg">
               <i class="text-3xl ri-service-line"></i>
-              <h1 class="font-semibold">Pelayanan maksimal</h1>
-              <p>Langsung diantar ke kostnya tanpa biaya pengantaran</p>
+              <h1 class="font-semibold text-sm md:text-lg">Pelayanan maksimal</h1>
+              <p class="text-sm md:text-base">Langsung diantar ke kostnya tanpa biaya pengantaran</p>
             </section>
             <section class="flex flex-col gap-2 p-4 text-center backdrop-blur-[80px] rounded-md hover:shadow-lg">
               <i class="text-3xl ri-video-on-line"></i>
-              <h1 class="font-semibold">Virtual tour</h1>
-              <p>Melihat kost secara virtual, mendapatkan gambar yang lebih baik</p>
+              <h1 class="font-semibold text-sm md:text-lg">Virtual tour</h1>
+              <p class="text-sm md:text-base">Melihat kost secara virtual, tanya hingga detail kecil!</p>
             </section>
           </div>
         </div>
@@ -98,14 +98,14 @@
       <!--========== SUPERIORITY END ========== -->
 
       <!--========== UNIVERSITY START ========== -->
-      <article class="container py-8" id="university">
+      <article class="py-8 container mx-auto" id="university">
         <h1 class="pb-2 text-lg font-semibold">Kuliah dimana?</h1>
-        <div class="grid grid-cols-2 gap-4 text-sm font-semibold">
+        <section class="grid grid-cols-2 gap-4 text-sm font-semibold md:grid-cols-3 lg:grid-cols-4">
           <a href="" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-in">
             <img src="/assets/img/logo-univ/logo-ump.png" alt="logo-ump" class="w-10" />
             <h1>UMP</h1>
           </a>
-          <a href="" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-in">
+          <a href="/" id="ump" class="flex items-center gap-2 px-4 py-2 border rounded-md hover:shadow-md border-neutral-300 hover:-translate-y-0.5 duration-300 ease-in">
             <img src="/assets/img/logo-univ/logo-unsoed.png" alt="logo-ump" class="w-10" />
             <h1>UNSOED</h1>
           </a>
@@ -121,12 +121,139 @@
             <img src="/assets/img/logo-univ/logo-poltekkes.png" alt="logo-ump" class="w-10" />
             <h1>POLTEKKES SEMARANG</h1>
           </a>
-        </div>
+        </section>
       </article>
       <!--========== UNIVERSITY END ========== -->
 
+      <!--========== REKOMENDATION START ========== -->
+      <article class="container py-10 mx-auto" id="recomendation">
+        <h1 class="pb-2 text-lg font-semibold">Rekomendasi kost untuk kamu</h1>
+        <section class="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
+          <a href="#" class="block rounded-lg p-2 shadow-sm shadow-indigo-100 hover:shadow-lg">
+            <img alt="" src="/assets/img/universitas/unsoed/tiara2/1.png" class="h-56 w-full rounded-md object-cover" />
+
+            <div class="mt-2">
+              <dl>
+                <div>
+                  <dt class="sr-only">Price</dt>
+
+                  <dd class="text-sm text-gray-500">Rp 5.000.000 / tahun</dd>
+                </div>
+
+                <div>
+                  <dt class="sr-only">Address</dt>
+
+                  <dd class="font-medium">Kost Karangwangkal 2</dd>
+                </div>
+              </dl>
+
+              <div class="flex gap-2 rounded text-white pt-1">
+                <div class="flex gap-1 bg-green-500 px-2 py-1 rounded"><i class="ri-star-fill"></i>4.7</div>
+                <p class="bg-yellow-500 flex items-center px-2 py-1 rounded">Putri</p>
+              </div>
+
+              <div class="text-sm flex py-2 gap-1 text-indigo-700">
+                <i class="ri-map-pin-2-line"></i>
+                <p>0.02 km dari unsoed belakang</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block rounded-lg p-2 shadow-sm shadow-indigo-100 hover:shadow-lg">
+            <img alt="" src="/assets/img/universitas/unsoed/griyakusuma/1.png" class="h-56 w-full rounded-md object-cover" />
+
+            <div class="mt-2">
+              <dl>
+                <div>
+                  <dt class="sr-only">Price</dt>
+
+                  <dd class="text-sm text-gray-500">Rp 6.000.000 / tahun</dd>
+                </div>
+
+                <div>
+                  <dt class="sr-only">Address</dt>
+
+                  <dd class="font-medium">Kost HR. Boenyamin</dd>
+                </div>
+              </dl>
+
+              <div class="flex gap-2 rounded text-white pt-1">
+                <div class="flex gap-1 bg-green-500 px-2 py-1 rounded"><i class="ri-star-fill"></i>4.9</div>
+                <p class="bg-yellow-500 flex items-center px-2 py-1 rounded">Putri</p>
+              </div>
+
+              <div class="text-sm flex py-2 gap-1 text-indigo-700">
+                <i class="ri-map-pin-2-line"></i>
+                <p>0.01 km dari unsoed depan</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block rounded-lg p-2 shadow-sm shadow-indigo-100 hover:shadow-lg">
+            <img alt="" src="/assets/img/universitas/unsoed/tiara2/1.png" class="h-56 w-full rounded-md object-cover" />
+
+            <div class="mt-2">
+              <dl>
+                <div>
+                  <dt class="sr-only">Price</dt>
+
+                  <dd class="text-sm text-gray-500">Rp 5.000.000 / tahun</dd>
+                </div>
+
+                <div>
+                  <dt class="sr-only">Address</dt>
+
+                  <dd class="font-medium">Kost Karangwangkal 2</dd>
+                </div>
+              </dl>
+
+              <div class="flex gap-2 rounded text-white pt-1">
+                <div class="flex gap-1 bg-green-500 px-2 py-1 rounded"><i class="ri-star-fill"></i>4.7</div>
+                <p class="bg-yellow-500 flex items-center px-2 py-1 rounded">Putri</p>
+              </div>
+
+              <div class="text-sm flex py-2 gap-1 text-indigo-700">
+                <i class="ri-map-pin-2-line"></i>
+                <p>0.02 km dari unsoed belakang</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block rounded-lg p-2 shadow-sm shadow-indigo-100 hover:shadow-lg">
+            <img alt="" src="/assets/img/universitas/unsoed/griyakusuma/1.png" class="h-56 w-full rounded-md object-cover" />
+
+            <div class="mt-2">
+              <dl>
+                <div>
+                  <dt class="sr-only">Price</dt>
+
+                  <dd class="text-sm text-gray-500">Rp 6.000.000 / tahun</dd>
+                </div>
+
+                <div>
+                  <dt class="sr-only">Address</dt>
+
+                  <dd class="font-medium">Kost HR. Boenyamin</dd>
+                </div>
+              </dl>
+
+              <div class="flex gap-2 rounded text-white pt-1">
+                <div class="flex gap-1 bg-green-500 px-2 py-1 rounded"><i class="ri-star-fill"></i>4.9</div>
+                <p class="bg-yellow-500 flex items-center px-2 py-1 rounded">Putri</p>
+              </div>
+
+              <div class="text-sm flex py-2 gap-1 text-indigo-700">
+                <i class="ri-map-pin-2-line"></i>
+                <p>0.01 km dari unsoed depan</p>
+              </div>
+            </div>
+          </a>
+        </section>
+      </article>
+      <!--========== REKOMENDATION END ========== -->
+
       <!--========== TESTIMONI START ========== -->
-      <article class="container" id="testimoni">
+      <article class="container pb-20 mx-auto" id="testimoni">
         <h1 class="pb-4 text-lg font-semibold text-center">Real Testimoni</h1>
         <div class="grid grid-cols-2">
           <section class="flex justify-center w-full overflow-hidden">
@@ -142,8 +269,62 @@
 
     <!--==================== Main End ====================-->
 
-    <!--==================== Footer Start ====================-->
+    <!--==================== HELP START ====================-->
+    <!-- <article class="fixed top-[50%] right-[5%]">
+      <a href="" class="flex items-center"><i class="ri-whatsapp-line text-4xl"></i></a>
+    </article> -->
+    <!--==================== HELP END ====================-->
 
+    <!--==================== Footer Start ====================-->
+    <footer class="bg-blue-100 text-sm md:text-base">
+      <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="flex justify-center text-teal-600">
+          <img src="/assets/img/logo/logo.jpg" alt="" class="w-[20%] rounded-full" />
+        </div>
+
+        <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">Goletkost berkomitmen sebagai penghubung antara anda dengan pemilik properti sekaligus menyediakan rekomendasi properti yang terbaik untuk anda tinggali.</p>
+
+        <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Beranda </a>
+          </li>
+
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Kost </a>
+          </li>
+
+          <li>
+            <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Tentang kami </a>
+          </li>
+        </ul>
+
+        <ul class="mt-12 flex justify-center gap-6 md:gap-8">
+          <li>
+            <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:text-gray-700/75">
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!--==================== Footer End ====================-->
 
     <!-- JAVASCRIPT -->
